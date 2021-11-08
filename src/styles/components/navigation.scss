@@ -1,0 +1,13 @@
+.navigation {
+    background: $primary-color-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    img {
+        display: block;
+        max-width: 100px;
+    }
+}

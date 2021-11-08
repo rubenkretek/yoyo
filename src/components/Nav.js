@@ -1,12 +1,13 @@
 import React from 'react';
 
+//Images
+import Logo from '../img/logo.svg';
+
 const Nav = () => {
     return (
-        <div>
-            <h1>
-                This is Nav
-            </h1>
-        </div>
+        <nav className="navigation">
+            <img src={Logo} alt="Little Loft Logo" />
+        </nav>
     )
 }
 
