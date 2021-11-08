@@ -1,4 +1,6 @@
-import './App.scss';
+import './styles/App.scss';
+
+//Components
 import Nav from './components/Nav';
 import Hero from './components/Hero';
 import Content from './components/Content';
