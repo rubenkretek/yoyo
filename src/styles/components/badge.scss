@@ -1,0 +1,19 @@
+.badge {
+    transition: all .3s ease;
+    &:hover,
+    &:focus {
+        transform: scale(1.05);
+    }
+    a {
+        display: block;
+        overflow: hidden; 
+        border-radius: 13px; 
+    }
+    img {
+        display: block;
+        max-width: 135px;
+        @include media(">medium") {
+            max-width: 175px;
+        }
+    }
+}

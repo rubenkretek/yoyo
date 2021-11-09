@@ -1,10 +1,35 @@
 import React from 'react';
 
+//Images
+import heroImage from '../img/hero-image/20---iPhone-12-Pro-Perspective-Style-Left-&-Right.png';
+import heroImageSmall from '../img/hero-image/20---iPhone-12-Pro-Perspective-Style-Left-&-Right@small.png';
+import heroImageMedium from '../img/hero-image/20---iPhone-12-Pro-Perspective-Style-Left-&-Right@medium.png';
+import appstoreBadge from '../img/badges/appstore.png';
+import googleBadge from '../img/badges/google-play.png';
+
+
 const Hero = () => {
     return (
-        <div>
-            This is Hero
-        </div>
+        <section className="hero">
+            <div className="hero__container">
+
+                <div className="hero__copy">
+                    <h1>Find new joy in second-hand toys</h1>
+                    <p className="hero__text">High-quality items at a fraction of the price, and you’ll be helping to save our planet Earth by reducing landfill.</p>
+                    <div className="hero__badges">
+                        <a className="badge badge--apple" href="https://apps.apple.com/us/app/spotify-new-music-and-podcasts/id324684580?itsct=apps_box_badge&amp;itscg=30200"><img src={appstoreBadge} alt="Download on the App Store" /></a>
+                        <a className="badge badge--google" href='https://play.google.com/store/apps/details?id=com.spotify.music&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src={googleBadge} /></a>
+                    </div>
+                </div>
+                <div className="hero__image">
+                    <picture>
+                        <source srcset={heroImage} media="(min-width: 1024px)" />
+                        <source srcset={heroImageMedium} media="(min-width: 640px)" />
+                        <img src={heroImageSmall} alt="Little Loft app in two smartphones overlapping each other" />
+                    </picture>
+                </div>
+            </div>
+        </section>
     )
 }
 
