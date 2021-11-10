@@ -1,0 +1,32 @@
+form {
+    input {
+        border-radius: 25px;
+        padding: 13px 25px;
+        font-size: 16px;
+        color: $text-color;
+        font-weight: $global-weight-normal;
+        border: 1px solid $light-gray;
+    }
+    input[type="submit"] {
+        @extend button;
+        border: none;
+    }
+    label {
+        display: block;
+    }
+}
+
+.form--newsletter-sign-up {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include media(">medium") {
+        flex-direction: row;
+    }
+    label {
+        display: none;
+    }
+    input[type="text"] {
+        flex-grow: 1;
+    }
+}
