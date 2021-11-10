@@ -43,18 +43,6 @@
     .hero__text {
         margin-bottom: 40px;
     }
-    .hero__badges {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        justify-content: center;
-        margin-bottom: 50px;
-        flex-wrap: wrap;
-        @include media(">large") {
-            margin-bottom: 0;
-            justify-content: flex-start;
-        }
-    }
     .hero__image {
         position: relative;
         img {
