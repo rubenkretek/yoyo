@@ -17,6 +17,11 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                transition: all .3s ease;
+                &:hover,
+                &:focus {
+                    transform: scale(1.15);
+                }
                 svg {
                     color: $black;
                     width: 20px;
