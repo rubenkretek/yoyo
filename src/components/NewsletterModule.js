@@ -2,9 +2,9 @@ import React from 'react';
 
 const NewsletterModule = () => {
     return (
-        <div>
+        <section className="newsletter-module">
             This is Newsletter Module
-        </div>
+        </section>
     )
 }
 

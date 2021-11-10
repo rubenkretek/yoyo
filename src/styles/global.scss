@@ -47,6 +47,7 @@ p {
     font-weight: $global-weight-bold;
     font-size: 14px;
     line-height: 18px;
+    margin-bottom: 20px;
     @include media(">medium") {
         font-size: 18px;
         line-height: 26px;
