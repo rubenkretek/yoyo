@@ -6,6 +6,9 @@ form {
         color: $text-color;
         font-weight: $global-weight-normal;
         border: 1px solid $light-gray;
+        &:focus {
+            border: 2px solid $secondary-color;
+        }
     }
     input[type="submit"] {
         @extend button;

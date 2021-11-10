@@ -62,6 +62,12 @@ button,
     padding: 13px 30px;
     font-size: 16px;
     font-weight: $global-weight-bold;
+    transition: all .3s ease;
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        background: $secondary-color;
+    }
 }
 
 img {
