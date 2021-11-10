@@ -1,0 +1,50 @@
+.content {
+    padding-left: 30px;
+    padding-right: 30px;
+    @include media(">medium") {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .content__item {
+        max-width: 900px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        @include media(">medium") {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+        @include media(">large") {
+            gap: 55px;
+        }
+
+        .content__image {
+            text-align: center;
+            @include media(">medium") {
+                text-align: left;
+                max-width: 50%;
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+        .content__copy {
+            text-align: center;
+            @include media(">medium") {
+                text-align: left;
+                max-width: 50%;
+            }
+        }
+
+        &:nth-child(even) {
+            .content__image {
+                order: 2;
+            }
+            .content__copy {
+                order: 1;
+            }
+        }
+    }
+    
+}
