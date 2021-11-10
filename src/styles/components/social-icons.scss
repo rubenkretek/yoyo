@@ -1,0 +1,28 @@
+.social-icons {
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        justify-content: center;
+        @include media("<medium") {
+            flex-wrap: wrap;
+        }
+        li {
+            a {
+                background: $white;
+                padding: 15px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg {
+                    color: $black;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
