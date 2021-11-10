@@ -1,9 +1,11 @@
 .content {
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 40px;
     @include media(">medium") {
         padding-left: 50px;
         padding-right: 50px;
+        padding-bottom: 0;
     }
     .content__item {
         max-width: 900px;

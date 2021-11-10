@@ -40,7 +40,7 @@ const theData = [
 
 const Content = () => {
     return (
-        <div className="content">
+        <section className="content">
             {theData.map((data) => (
                 <div className="content__item">
                     <div className="content__image">
@@ -54,7 +54,7 @@ const Content = () => {
                 </div>
             ))
             }
-        </div>
+        </section>
     )
 }
 
