@@ -42,7 +42,7 @@ const Content = () => {
     return (
         <section className="content">
             {theData.map((data) => (
-                <div className="content__item">
+                <div className="content__item" data-aos="fade-up">
                     <div className="content__image">
                         <img src={data.imageURL} alt={data.imageAltTag} />
                     </div>

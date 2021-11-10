@@ -9,7 +9,7 @@ import ourStoryImageLarge from '../img/our-story/our-story@large.png';
 const InfoModule = () => {
     return (
         <section className="info-module">
-            <div className="info-module__container">
+            <div className="info-module__container" data-aos="fade-up">
 
                 <div className="info-module__image">
                     <picture>

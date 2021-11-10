@@ -6,7 +6,7 @@ import woodBlocks from '../img/wood-blocks.svg';
 const NewsletterModule = () => {
     return (
         <section className="newsletter-module">
-            <div className="newsletter-module__container">
+            <div className="newsletter-module__container" data-aos="fade-up">
                 <div className="newsletter-module__image">
                     <img src={woodBlocks} alt="Little Loft Logo" />
                 </div>
