@@ -8,20 +8,18 @@
         max-width: 1140px;
         margin: 0 auto;
         @include media(">large") {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
             justify-items: stretch;
             align-items: center;
-            grid-gap: 75px;
+            gap: 75px;
         }
         @include media(">xlarge") {
-            grid-gap: 115px; 
+            gap: 115px; 
         }
     }
     .info-module__copy {
         @include media(">large") {
-            grid-column: 1 / 2;
-            grid-row: 1;
+            
         }
         h2 {
             margin-top: 0;
@@ -31,8 +29,8 @@
         margin-bottom: 40px;
         @include media(">large") {
             margin-bottom: 0;
-            grid-column: 2 / 3;
-            grid-row: 1;
+            flex-shrink: 0;
+            order: 2;
         }
     }
 }

@@ -20,7 +20,7 @@ const Footer = () => {
                 </div>
                 <div className="footer__disclaimer-social">
                     <div className="footer__disclaimer">
-                        © Little Loft {thisYear}. All Right Reserved.
+                        © Little Loft {thisYear} . All Rights Reserved.
                     </div>
                     <div className="footer__social_icons">
                         <SocialIcons />
