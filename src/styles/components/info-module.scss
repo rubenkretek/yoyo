@@ -18,9 +18,6 @@
         }
     }
     .info-module__copy {
-        @include media(">large") {
-            
-        }
         h2 {
             margin-top: 0;
         }

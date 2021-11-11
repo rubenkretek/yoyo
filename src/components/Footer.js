@@ -26,7 +26,6 @@ const Footer = () => {
                         <SocialIcons />
                     </div>
                 </div>
-
             </div>
         </footer>
     )
